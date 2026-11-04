@@ -1,0 +1,365 @@
+.advanced-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #e5f1fa;
+}
+
+.advanced-status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #0b2030;
+  border: 1px solid rgba(100, 180, 210, .15);
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.advanced-status-bar > div,
+.advanced-refresh {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.advanced-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #39d6a0;
+  box-shadow: 0 0 10px #39d6a0;
+}
+
+.advanced-source-tag {
+  padding: 5px 9px;
+  border-radius: 5px;
+  background: rgba(65, 170, 210, .12);
+  color: #74cce8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .6px;
+}
+
+.advanced-refresh {
+  color: #91aaba;
+}
+
+.advanced-refresh button {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(120, 180, 210, .2);
+  border-radius: 7px;
+  background: #132e40;
+  color: #9edcec;
+  cursor: pointer;
+}
+
+.advanced-refresh button:hover {
+  background: #1b4055;
+}
+
+.advanced-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 150, 100, .3);
+  border-radius: 9px;
+  background: rgba(180, 80, 40, .12);
+  color: #ffb18e;
+  font-size: 13px;
+}
+
+.advanced-loading {
+  display: flex;
+  min-height: 180px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #8eafc0;
+}
+
+.advanced-loading svg {
+  animation: advanced-spin 1.5s linear infinite;
+}
+
+@keyframes advanced-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.advanced-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.advanced-section-heading h2 {
+  margin: 5px 0 0;
+  color: #e8f5fc;
+  font-size: 19px;
+  font-weight: 650;
+}
+
+.advanced-section-heading .eyebrow {
+  color: #65b9cc;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 1.2px;
+}
+
+.advanced-panel {
+  padding: 20px;
+  background: #0b2030;
+  border: 1px solid rgba(100, 180, 210, .15);
+  border-radius: 12px;
+  min-width: 0;
+}
+
+.advanced-device-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.advanced-device-icon,
+.advanced-intelligence-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: rgba(48, 180, 190, .12);
+  color: #65d5d1;
+}
+
+.advanced-device-info {
+  display: flex;
+  flex: 1;
+  min-width: 150px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.advanced-device-info b {
+  color: #e5f4fa;
+  font-size: 14px;
+}
+
+.advanced-device-info span {
+  color: #829eaf;
+  font-size: 12px;
+}
+
+.advanced-online,
+.advanced-offline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.advanced-online {
+  background: rgba(45, 200, 140, .1);
+  color: #55d9a4;
+}
+
+.advanced-offline {
+  background: rgba(240, 90, 90, .12);
+  color: #ff8989;
+}
+
+.advanced-device-details,
+.advanced-ai-details {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(130, 180, 200, .12);
+}
+
+.advanced-device-details > div,
+.advanced-ai-details > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.advanced-device-details small,
+.advanced-ai-details small {
+  color: #829eaf;
+  font-size: 11px;
+}
+
+.advanced-device-details b,
+.advanced-ai-details b {
+  color: #d9edf6;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.advanced-intelligence-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.advanced-intelligence-row > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.advanced-intelligence-row b {
+  color: #e2f2f8;
+  font-size: 14px;
+}
+
+.advanced-intelligence-row p {
+  margin: 6px 0 0;
+  color: #8daaba;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.advanced-risk-score {
+  display: flex;
+  min-width: 65px;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.advanced-risk-score strong {
+  color: #66d9ce;
+  font-size: 23px;
+}
+
+.advanced-risk-score small {
+  color: #829eaf;
+  font-size: 10px;
+}
+
+.advanced-explanation,
+.advanced-muted {
+  margin: 18px 0 0;
+  color: #a1bac8;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.advanced-ai-details {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.advanced-observations {
+  padding-left: 20px;
+  color: #a1bac8;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.advanced-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  padding: 18px;
+  color: #63d2bd;
+  text-align: center;
+}
+
+.advanced-empty b {
+  color: #dcecf3;
+  font-size: 13px;
+}
+
+.advanced-empty p {
+  margin: 0;
+  color: #829eaf;
+  font-size: 12px;
+}
+
+.advanced-alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.advanced-alert {
+  display: flex;
+  gap: 12px;
+  padding: 13px;
+  border-radius: 9px;
+  background: rgba(230, 140, 70, .07);
+  color: #ffb06d;
+}
+
+.advanced-alert > div {
+  min-width: 0;
+}
+
+.advanced-alert b {
+  color: #f2d4b8;
+  font-size: 12px;
+}
+
+.advanced-alert p {
+  margin: 5px 0;
+  color: #b6c8d1;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.advanced-alert small {
+  color: #819ba9;
+  font-size: 10px;
+}
+
+.advanced-disclaimer {
+  margin: 0;
+  color: #7894a5;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .advanced-device-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .advanced-status-bar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .advanced-panel {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .advanced-intelligence-row {
+    flex-wrap: wrap;
+  }
+
+  .advanced-risk-score {
+    margin-left: auto;
+  }
+}

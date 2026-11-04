@@ -1,0 +1,134 @@
+
+.ocean-map-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: #eaf5ff;
+}
+
+.ocean-map-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ocean-map-toolbar h2 {
+  margin: 5px 0;
+  font-size: 21px;
+}
+
+.ocean-map-toolbar p {
+  color: #9db2c8;
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.map-eyebrow {
+  color: #53d9d0;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.map-refresh {
+  border: 1px solid #24566a;
+  background: #102d3d;
+  color: #68e1d5;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  color: #b9ccdd;
+  font-size: 12px;
+}
+
+.map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.latest-dot { background: #ffb84d; }
+.simulated-dot { background: #55b9ff; }
+.real-dot { background: #48e0a4; }
+
+.ocean-leaflet-map {
+  height: 490px;
+  width: 100%;
+  border: 1px solid #245268;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #102a3c;
+  z-index: 1;
+}
+
+.ocean-map-popup {
+  color: #172b3d;
+  font-size: 12px;
+  line-height: 1.7;
+  min-width: 190px;
+}
+
+.ocean-map-popup strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #087e85;
+}
+
+.map-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.map-stat {
+  background: #10283a;
+  border: 1px solid #21465c;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.map-stat span {
+  display: block;
+  color: #9bb2c8;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.map-stat strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 24px;
+  color: #63d9d2;
+}
+
+.map-footnote {
+  color: #829bb0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .ocean-leaflet-map {
+    height: 380px;
+  }
+
+  .map-stat-grid {
+    grid-template-columns: 1fr;
+  }
+}
